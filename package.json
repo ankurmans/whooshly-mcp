@@ -1,0 +1,48 @@
+{
+  "name": "whooshly-mcp",
+  "version": "1.0.0",
+  "description": "Create short links, dynamic QR codes, UTM templates, and hosted vCards from your AI assistant. A zero-dependency stdio bridge to Whooshly's hosted MCP server (also connectable directly by URL from claude.ai and ChatGPT).",
+  "type": "module",
+  "bin": {
+    "whooshly-mcp": "bin/whooshly-mcp.mjs"
+  },
+  "files": [
+    "bin",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/whooshly-mcp.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude",
+    "chatgpt",
+    "anthropic",
+    "url-shortener",
+    "short-link",
+    "qr-code",
+    "utm",
+    "utm-builder",
+    "vcard",
+    "link-in-bio",
+    "marketing",
+    "whooshly"
+  ],
+  "homepage": "https://whooshly.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankurmans/whooshly-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ankurmans/whooshly-mcp/issues"
+  },
+  "author": "Whooshly",
+  "license": "MIT"
+}

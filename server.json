@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.ankurmans/whooshly-mcp",
+  "description": "Create short links, QR codes, UTM templates, and vCards from your AI assistant.",
+  "repository": {
+    "url": "https://github.com/ankurmans/whooshly-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "website_url": "https://whooshly.co",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.whooshly.co/api/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registry_type": "npm",
+      "registry_base_url": "https://registry.npmjs.org",
+      "identifier": "whooshly-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environment_variables": [
+        {
+          "name": "WHOOSHLY_TOKEN",
+          "description": "Agent token minted at https://app.whooshly.co (Agents).",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ]
+}
