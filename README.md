@@ -1,6 +1,6 @@
 # Whooshly MCP
 
-Give your AI assistant a campaign-link toolkit. **[Whooshly](https://whooshly.co)** exposes a hosted [Model Context Protocol](https://modelcontextprotocol.io) server so Claude, ChatGPT, and any MCP client can create short links, dynamic **QR codes**, **UTM** templates, and hosted **vCard** pages – and read back real click/scan analytics – directly from a conversation.
+Give your AI assistant a campaign-link toolkit. **[Whooshly](https://whooshly.co)** exposes a hosted [Model Context Protocol](https://modelcontextprotocol.io) server so Claude, ChatGPT, and any MCP client can create short links, dynamic **QR codes**, **UTM** templates, hosted **vCard** pages, and **landing pages** with lead capture – and read back real click/scan analytics – directly from a conversation.
 
 > "Shorten this launch URL, make a QR for the flyer, and save a UTM template for the paid-social campaign" → three tools, one message, links you actually own.
 
@@ -95,10 +95,14 @@ That's it – restart the client and the Whooshly tools are available.
 | `create_utm` | Save a reusable UTM template | Core |
 | `list_utm` | List saved UTM templates | Core |
 | `create_vcard` | Create a hosted digital business card (vCard) page | Core |
+| `create_page` | Create a landing page on your subdomain from content blocks | Core |
+| `update_page` | Edit a page's blocks, theme, or slug – never deletes | Core |
+| `list_pages` | List your landing pages with lead counts | Core |
+| `get_page` | One page's content, lead count & webhook delivery rollup | Core |
 | `search` | Search your links by slug/destination (deep-research) | Core |
 | `fetch` | Fetch full details of one link by id (deep-research) | Core |
 
-All read tools are annotated `readOnlyHint`; all write tools are non-destructive and operate only on your own account (`openWorldHint: false`).
+All read tools are annotated `readOnlyHint`; write tools can only create or edit – an agent can never delete anything, never read your leads' personal details (counts only), and never see or change a lead webhook. Every tool operates only on your own account (`openWorldHint: false`).
 
 ---
 

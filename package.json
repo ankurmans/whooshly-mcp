@@ -1,8 +1,8 @@
 {
   "name": "whooshly-mcp",
-  "version": "1.0.1",
-  "mcpName": "io.github.ankurmans/whooshly-mcp",
-  "description": "Create short links, dynamic QR codes, UTM templates, and hosted vCards from your AI assistant. A zero-dependency stdio bridge to Whooshly's hosted MCP server (also connectable directly by URL from claude.ai and ChatGPT).",
+  "version": "1.1.0",
+  "mcpName": "co.whooshly/whooshly-mcp",
+  "description": "Create short links, dynamic QR codes, UTM templates, hosted vCards, and landing pages with lead capture from your AI assistant. A zero-dependency stdio bridge to Whooshly's hosted MCP server (also connectable directly by URL from claude.ai and ChatGPT).",
   "type": "module",
   "bin": {
     "whooshly-mcp": "bin/whooshly-mcp.mjs"
