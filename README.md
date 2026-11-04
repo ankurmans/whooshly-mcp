@@ -60,6 +60,10 @@ claude mcp add whooshly --transport http https://app.whooshly.co/api/mcp \
   --header "Authorization: Bearer $WHOOSHLY_TOKEN"
 ```
 
+### Claude Code plugin
+
+The repo is also a Claude Code plugin. Enabling it prompts once for your agent token (mint one at https://app.whooshly.co/agents). The token is stored in your system keychain and sent as a bearer header to `https://app.whooshly.co/api/mcp`; the plugin never reads it from your shell or files.
+
 ### Claude Desktop (or any stdio client) – via this bridge
 
 For clients that only speak stdio, use this package. Add it to your `claude_desktop_config.json`:
