@@ -2,7 +2,10 @@
   "mcpServers": {
     "whooshly": {
       "url": "https://app.whooshly.co/api/mcp",
-      "type": "http"
+      "type": "http",
+      "headers": {
+        "Authorization": "Bearer ${user_config.whooshly_token}"
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 name: whooshly-setup
 description: Use when the user wants to create or manage short links, dynamic QR codes, UTM templates, digital business cards (vCards), or hosted landing pages with Whooshly, or asks how to connect, authenticate, or troubleshoot the Whooshly MCP connector.
 author: Whooshly
-version: 1.1.0
+version: 1.1.1
 tags:
   - links
   - qr-codes
@@ -24,11 +24,13 @@ Every tool acts on the user's own Whooshly account and requires the one-time
 **Core** plan (or Pro) to be unlocked; `get_billing_status` works on any
 account so it can be checked before anything else.
 
-- **Claude.ai / Desktop / mobile**: the remote server prompts an OAuth consent
-  screen the first time a tool is called. No manual setup needed.
-- **Claude Code / header-based clients**: the user mints a token at
-  `https://app.whooshly.co/agents` and adds it as a bearer header, e.g.
-  `claude mcp add --transport http whooshly https://app.whooshly.co/api/mcp --header "Authorization: Bearer <token>"`.
+- **This plugin (Claude Code)**: enabling the plugin asks for a **Whooshly agent
+  token** once and keeps it in the system keychain. Mint one at
+  `https://app.whooshly.co/agents` (Agents, then New token). If the user skipped
+  it or a call returns 401, send them to `/plugin` to re-enter the token.
+- **Claude.ai / Desktop / mobile (standalone connector)**: the remote server
+  prompts an OAuth consent screen the first time a tool is called. No manual
+  setup needed.
 
 If a tool call fails with `core_locked` or `pro_required`, tell the user what
 plan is needed and point them at `https://app.whooshly.co` to upgrade — do not
