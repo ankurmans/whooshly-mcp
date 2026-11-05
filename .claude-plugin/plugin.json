@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "whooshly",
+  "displayName": "Whooshly",
+  "version": "1.1.1",
+  "description": "Create short links, dynamic QR codes, UTM templates, hosted vCards, and landing pages with lead capture from Claude. Connects to Whooshly's hosted remote MCP server.",
+  "author": {
+    "name": "Whooshly",
+    "url": "https://whooshly.co"
+  },
+  "homepage": "https://whooshly.co/docs/agents/mcp-quickstart",
+  "repository": "https://github.com/ankurmans/whooshly-mcp",
+  "license": "MIT",
+  "keywords": [
+    "url-shortener",
+    "short-link",
+    "qr-code",
+    "utm",
+    "vcard",
+    "link-in-bio",
+    "marketing",
+    "whooshly"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "icon": "./.claude-plugin/icon.png",
+  "documentationUrl": "https://whooshly.co/docs/agents/mcp-quickstart",
+  "supportUrl": "https://whooshly.co/contact",
+  "privacyPolicyUrl": "https://whooshly.co/privacy",
+  "termsOfServiceUrl": "https://whooshly.co/terms"
+}

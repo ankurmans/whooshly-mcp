@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "whooshly": {
+      "type": "http",
+      "url": "https://app.whooshly.co/api/mcp"
+    }
+  }
+}
